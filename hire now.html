@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hire Now</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f87060, #102542);
+      padding: 20px;
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+
+    .form-container {
+      max-width: 500px;
+      background-color: #ffffff10;
+      padding: 25px;
+      border-radius: 10px;
+      margin: auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #00cc99;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #009977;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    
+    @media (max-width: 768px) {
+      .form-container {
+        width: 90%;
+      }
+    }
+    @media (max-width: 1000px) {
+      .form-container {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hire NOW</h1>
+
+  <div class="form-container">
+    <form action="#" method="POST">
+      <label for="name">Your Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Your Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="service">Type of Service</label>
+      <select id="service" name="service" required>
+        <option value="">Select a Service</option>
+        <option value="Gas Cooker Fixer">Gas Cooker Fixer</option>
+        <option value="Interior Expert">Refrigator Fixer</option>
+        <option value="Laptop Repair"> Mobile & Laptop Experts</option>
+        <option value="Laundry Machine Fixer">Laundry Machine Services</option>
+        <option value="CCTV Installer">Security System Technician</option>
+        <option value="DESIGN AND DECOR SPECIALISTS">DESIGN AND DECOR SPECIALISTS</option>
+        <option value="PAINTING & DECORATING SERVICES">PAINTING & DECORATING SERVICES</option>
+      </select>
+      <label for="Name">Worker's Full Name:</label>
+      <input type="text" id="Name" name="Name" required>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="message">Additional Notes (Optional)</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Send Booking Request</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 ABDIRAHMAN. All rights reserved.</p>
+  </div>
+
+</body>
+</html>

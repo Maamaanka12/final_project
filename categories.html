@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>categories</title>
+  <style>
+  *{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #f87060, #102542);
+
+    padding: 20px;
+}
+
+h1{
+    
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-header{
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #722020;
+    flex-wrap: wrap;
+}
+
+.category {
+    overflow-x: auto;
+    padding: 10px;    
+    display: flex;  
+    justify-content: center;   
+    flex-wrap: wrap;   
+    gap: 10px;  
+}
+
+.category:hover{    
+    
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+ 
+.photo{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.profile{
+    background: #eaecc6;
+    border-radius: 15px;
+    padding: 4px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 350px;
+    margin: 10px;   
+    max-width: 90em;
+}
+
+.profile img {
+    width: 150px;
+    height: 170px;
+    border-radius: 20%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #ecf0f1;
+}
+
+.name {
+    font-family: lucida console;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.job {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    color: #34495e;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+.rate {
+    color: #e67e22;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+.ex{
+    font-size: 1.1rem;
+    color: #8e44ad;
+    margin-bottom: 8px;
+
+}
+.num {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+.rating {
+    color: #f1c40f;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #4024bb;
+    color: white;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.profile:hover {
+    transform: scale(1.05); }
+
+.footer{
+    text-align: center;   
+    margin-top: 20px;   
+    color: #fff;   
+    font-size: 14px;   
+}
+@media (max-width: 1000px) {
+    .category {
+        gap: 10px;
+        padding: 10px;
+        margin: 0;
+    }
+    .profile {
+        width: 45vw;
+        min-width: 220px;
+        max-width: 90vw;
+    }
+}
+@media (max-width: 768px) {
+    .category {
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        padding: 5px;
+    }
+    .profile {
+        width: 95vw;
+        padding: 8px;
+        min-width: 140px;
+        box-sizing: border-box;
+        margin: 0;
+
+    }
+    .profile img {
+        width:80px;
+        height: 80px;
+    }
+}
+  </style>
+</head>
+<body>
+  <h1>Available Categories </h1>
+  <h3 class="section-header">COOKER</h3>
+  <div class="category">
+      <div class="profile">
+        <img class="photo" src="" alt="" /> 
+        <div>
+          <p class="name">Name: ABDIRAHMAN MOHAMMED ABDIRAHMAN</p>
+          <p class="job">PROFESSION: GAS COOKER FIXER</p> 
+          <p class="rate">RATE: 12 $ / HOUR</p>
+          <P class="ex">EXPERIENCE: 2+ YEARS</P>
+          <p class="num"> PHONE NUMBER: +252 61 1234567</p>
+          <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+          <a class="btn" href="hire now.html">HIRE NOW </a>
+        </div>
+      </div> 
+      <div class="profile"> 
+        <img class="photo" src="" alt="" /> 
+        <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+        <p class="job">PROFESSION: GAS COOKER FIXER</p> 
+        <p class="rate">RATE: 12/HOUR</p>
+        <P class="ex">EXPERIENCE: 2+ YEARS</P>
+        <p class="num">CONTACT: +252 61 1234567</p>
+        <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+      </div>
+      <div class="profile"> 
+        <img class="photo" src="" alt="" /> 
+        <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+        <p class="job">PROFESSION: GAS COOKER FIXER</p> 
+        <p class="rate">RATE: 12/HOUR</p>
+        <P class="ex">EXPERIENCE: 2+ YEARS</P>
+        <p class="num">CONTACT: +252 61 1234567</p>
+        <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+      </div> 
+      <div class="profile"> 
+        <img class="photo" src="" alt="" /> 
+        <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+        <p class="job">PROFESSION: GAS COOKER FIXER</p> 
+        <p class="rate">RATE: 12/HOUR</p>
+        <P class="ex">EXPERIENCE: 2+ YEARS</P>
+        <p class="num">CONTACT: +252 61 1234567</p>
+         <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p>
+      </div> 
+      <div class="profile"> 
+        <img class="photo" src="" alt="" /> 
+        <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+        <p class="job">PROFESSION: GAS COOKER FIXER</p> 
+        <p class="rate">RATE: 12/HOUR</p>
+        <P class="ex">EXPERIENCE: 2+ YEARS</P>
+        <p class="num">CONTACT: +252 61 1234567</p>
+        <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+        </div>
+        <div class="profile"> 
+        <img class="photo" src="" alt="" /> 
+        <p class="name">NAME: ABDIRAHMAN MOHAMMED </p>
+        <p class="job">PROFESSION: GAS COOKER FIXER</p> 
+        <p class="rate">RATE: 12 $ / HOUR</p>
+        <P class="ex">EXPERIENCE: 2+ YEARS</P>
+        <p class="num">CONTACT: +252 61 1234567</p>
+        <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+      </div>
+  </div>
+<!-- -- REFRIGERATOR FIXERS SECTION STARTS HERE ---    -->
+    <h3 class="section-header">REFRIGATOR FIXERS</h3>
+    <div class="category">
+     
+      <div class="profile">
+        <img class="photo" src="ref1.jpg" alt="" /> 
+        <p class="name">NAME: ABDIRAHMAN MOHAMMED </p>
+        <p class="job">PROFESSION: REFRIGATOR FIXER</p> 
+        <p class="rate">RATE: 12 $ / HOUR</p>
+        <P class="job">EXPERIENCE: 2+ YEARS</P>
+        <p class="num"> PHONE NUMBER: +252 61 1234567</p>
+        <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+      </div> 
+      <div class="profile"> 
+        <img class="photo" src="ref2.jpg" alt="" /> 
+        <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+        <p class="job">PROFESSION: REFRIGATOR FIXER</p> 
+        <p class="rate">RATE: 12/HOUR</p>
+        <P class="ex">EXPERIENCE: 2+ YEARS</P>
+        <p class="num">CONTACT: +252 61 1234567</p>
+        <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+      </div> 
+      <div class="profile"> 
+        <img class="photo" src="ref3.jpg" alt="" /> 
+        <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+        <p class="job">PROFESSION: REFRIGATOR FIXER</p> 
+        <p class="rate">RATE: 12/HOUR</p>
+        <P class="ex">EXPERIENCE: 2+ YEARS</P>
+        <p class="num">CONTACT: +252 61 1234567</p>
+        <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+      </div>
+      <div class="profile"> 
+        <img class="photo" src="ref4.jpg" alt="" /> 
+        <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+        <p class="job">PROFESSION: REFRIGATOR FIXER</p> 
+        <p class="rate">RATE: 12/HOUR</p>
+        <P class="ex">EXPERIENCE: 2+ YEARS</P>
+        <p class="num">CONTACT: +252 61 1234567</p>
+         <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p>
+      </div> 
+      <div class="profile"> 
+        <img class="photo" src="ref5.jpg" alt="" /> 
+        <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+        <p class="job">PROFESSION: REFRIGATOR FIXER</p> 
+        <p class="rate">RATE: 12/HOUR</p>
+        <P class="ex">EXPERIENCE: 2+ YEARS</P>
+        <p class="num">CONTACT: +252 61 1234567</p>
+        <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+        </div>
+      <div class="profile"> 
+        <img class="photo" src="ref6.jpg" alt="" /> 
+        <p class="name">NAME: ABDIRAHMAN MOHAMMED </p>
+        <p class="job">PROFESSION: REFRIGATOR FIXER</p> 
+        <p class="rate">RATE: 12 $ / HOUR</p>
+        <P class="ex">EXPERIENCE: 2+ YEARS</P>
+        <p class="num">CONTACT: +252 61 1234567</p>
+        <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+      </div>
+    </div>  
+<!-- -- mobile and laptop FIXERS SECTION STARTS HERE ---    -->
+<h3 class="section-header">MOBILE & LAPTOP EXPERTS</h3>
+  <div class="category">
+     
+    <div class="profile">
+      <img class="photo" src="mob1.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED </p>
+      <p class="job">PROFESSION: LAPTOP TECHNICIAN</p> 
+      <p class="rate">RATE: 12 $ / HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num"> PHONE NUMBER: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+    </div> 
+    <div class="profile"> 
+      <img class="photo" src="mob2.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+      <p class="job">PROFESSION: PHONE REPAIR TECHNICIAN</p> 
+      <p class="rate">RATE: 12/HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+    </div> 
+    <div class="profile"> 
+      <img class="photo" src="mob3.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+      <p class="job">PROFESSION: LAPTOP TECHNICIAN</p> 
+      <p class="rate">RATE: 12/HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+    </div>
+    <div class="profile"> 
+      <img class="photo" src="mob4.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+      <p class="job">PROFESSION: PHONE REPAIR TECHNICIAN</p> 
+      <p class="rate">RATE: 12/HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+       <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p>
+    </div> 
+    <div class="profile"> 
+      <img class="photo" src="mob5.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+      <p class="job">PROFESSION: PHONE REPAIR TECHNICIAN</p> 
+      <p class="rate">RATE: 12/HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+      </div>
+    <div class="profile"> 
+      <img class="photo" src="mob6.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED </p>
+      <p class="job">PROFESSION: PHONE REPAIR TECHNICIAN</p> 
+      <p class="rate">RATE: 12 $ / HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+  
+    </div> 
+  
+  </div>
+<!-- -- laundry machine FIXERS SECTION STARTS HERE ---    -->
+<h3 class="section-header">LAUNDRY MACHINE SERVICES</h3>
+  <div class="category">
+     
+    <div class="profile">
+      <img class="photo" src="qas1.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED </p>
+      <p class="job">PROFESSION: LAUNDRY EQUIPMENT EXPERT</p> 
+      <p class="rate">RATE: 12 $ / HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num"> PHONE NUMBER: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+    </div> 
+    <div class="profile"> 
+      <img class="photo" src="qas2.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+      <p class="job">PROFESSION: LAUNDRY EQUIPMENT EXPERT</p> 
+      <p class="rate">RATE: 12/HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+    </div> 
+    <div class="profile"> 
+      <img class="photo" src="qas3.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+      <p class="job">PROFESSION: LAUNDRY EQUIPMENT EXPERT</p> 
+      <p class="rate">RATE: 12/HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+    </div>
+    <div class="profile"> 
+      <img class="photo" src="qas4.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+      <p class="job">PROFESSION: LAUNDRY EQUIPMENT EXPERT</p> 
+      <p class="rate">RATE: 12/HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+       <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p>
+    </div> 
+    <div class="profile"> 
+      <img class="photo" src="qas5.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+      <p class="job">PROFESSION: LAUNDRY EQUIPMENT EXPERT</p> 
+      <p class="rate">RATE: 12/HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+      </div>
+    <div class="profile"> 
+      <img class="photo" src="qas6.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED </p>
+      <p class="job">PROFESSION: LAUNDRY EQUIPMENT EXPERT</p> 
+      <p class="rate">RATE: 12 $ / HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+  
+    </div> 
+  
+  </div>
+
+<!-- -- cc camera FIXERS SECTION STARTS HERE ---    -->
+<h3 class="section-header">SECURITY SYSTEM TECHNICIAN</h3>
+  <div class="category">
+     
+    <div class="profile">
+      <img class="photo" src="cc1.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED </p>
+      <p class="job">PROFESSION: SECURITY EXPERT</p> 
+      <p class="rate">RATE: 12 $ / HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num"> PHONE NUMBER: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+    </div> 
+    <div class="profile"> 
+      <img class="photo" src="cc2.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+      <p class="job">PROFESSION: SECURITY EXPERT</p> 
+      <p class="rate">RATE: 12/HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+    </div> 
+    <div class="profile"> 
+      <img class="photo" src="cc3.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+      <p class="job">PROFESSION: SECURITY EXPERT</p> 
+      <p class="rate">RATE: 12/HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+    </div>
+    <div class="profile"> 
+      <img class="photo" src="cc4.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+      <p class="job"> PROFESSION: SECURITY EXPERT</p> 
+      <p class="rate"> RATE: 12/HOUR</p>
+      <P class="ex"> EXPERIENCE: 2+ YEARS</P>
+      <p class="num"> CONTACT: +252 61 1234567</p>
+       <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p>
+    </div> 
+    <div class="profile"> 
+      <img class="photo" src="cc5.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+      <p>PROFESSION: SECURITY EXPERT</p> 
+      <p>RATE: 12/HOUR</p>
+      <P>EXPERIENCE: 2+ YEARS</P>
+      <p>CONTACT: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+      </div>
+    <div class="profile"> 
+      <img class="photo" src="cc6.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED </p>
+      <p class="job">PROFESSION: SECURITY EXPERT</p> 
+      <p class="rate">RATE: 12 $ / HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+  
+    </div> 
+  
+  </div>
+
+<!-- -- interior design SECTION STARTS HERE  ---  not done   -->
+<h3 class="section-header">DESIGN AND DECOR SPECIALISTS</h3>
+  <div class="category">
+     
+    <div class="profile">
+      <img class="photo" src="naag 1.jpeg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED </p>
+      <p class="job">PROFESSION: INTERIOR EXPERT</p> 
+      <p class="rate">RATE: 12 $ / HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num"> PHONE NUMBER: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+
+    </div> 
+    <div class="profile"> 
+      <img class="photo" src="naag 2.jpeg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+      <p class="job">PROFESSION: INTERIOR EXPERT</p> 
+      <p class="rate">RATE: 12/HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+    </div> 
+    <div class="profile"> 
+      <img class="photo" src="naag 2.jpeg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+      <p class="job">PROFESSION: INTERIOR EXPERT</p> 
+      <p class="rate">RATE: 12/HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+    </div>
+    <div class="profile"> 
+      <img class="photo" src="naag 3.jpeg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+      <p class="job">PROFESSION: INTERIOR EXPERT</p> 
+      <p class="rate">RATE: 12/HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+       <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p>
+    </div> 
+    <div class="profile"> 
+      <img class="photo" src="unknown user.png" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+      <p class="job">PROFESSION: INTERIOR EXPERT</p> 
+      <p class="rate">RATE: 12/HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+      </div>
+    <div class="profile"> 
+      <img class="photo" src="naag 1.jpeg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED </p>
+      <p class="job">PROFESSION: INTERIOR EXPERT</p> 
+      <p class="rate">RATE: 12 $ / HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+  
+    </div> 
+  
+  </div>
+
+
+<!-- -- PAINTERS SECTION STARTS HERE ---    -->
+<h3 class="section-header">PAINTING & DECORATING SERVICES</h3>
+  <div class="category">
+     
+    <div class="profile">
+      <img class="photo" src="paint1.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED </p>
+      <p class="job">PROFESSION: INTERIOR PAINTER</p> 
+      <p class="rate">RATE: 12 $ / HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num"> PHONE NUMBER: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+    </div> 
+    <div class="profile"> 
+      <img class="photo" src="paint2.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+      <p class="job">PROFESSION: INTERIOR PAINTER</p> 
+      <p class="rate">RATE: 12/HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+    </div> 
+    <div class="profile"> 
+      <img class="photo" src="paint3.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+      <p class="job">PROFESSION: EXTERIOR PAINTER</p> 
+      <p class="rate">RATE: 12/HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+    </div>
+    <div class="profile"> 
+      <img class="photo" src="paint4.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+      <p class="job">PROFESSION: EXTERIOR PAINTER</p> 
+      <p class="rate">RATE: 12/HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+       <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p>
+    </div> 
+    <div class="profile"> 
+      <img class="photo" src="paint5.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED</p>
+      <p class="job">PROFESSION: DECORATIVE PAINTER</p> 
+      <p class="rate">RATE: 12/HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+      </div>
+    <div class="profile"> 
+      <img class="photo" src="paint6.jpg" alt="" /> 
+      <p class="name">NAME: ABDIRAHMAN MOHAMMED </p>
+      <p class="job">PROFESSION: DECORATIVE PAINTER</p> 
+      <p class="rate">RATE: 12 $ / HOUR</p>
+      <P class="ex">EXPERIENCE: 2+ YEARS</P>
+      <p class="num">CONTACT: +252 61 1234567</p>
+      <p class="rating">RATING:&#11088 &#11088 &#11088 &#11088 &#11088</p> 
+  
+    </div> 
+  
+  </div>
+
+
+<div class="footer"> 
+  <p>&copy; 2025 ABDIRAHMAN</p>
+  <p>All rights reserved.</p>
+  <p>Contact: +252 61 1234567</p>
+</div>
+  
+
+</body>
+</html>
