@@ -4,9 +4,246 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Report a Professional</title>
-  <link rel="stylesheet" href="report.css">
-</head>
+  <style>
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0a1a3a; /* Dark blue */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: #f0e6d2; /* Cream */
+}
+/* ===== UNIVERSAL NAVIGATION BAR ===== */
+nav {
+    background: rgba(10, 26, 58, 0.98); /* Semi-transparent dark blue */
+    padding: 0.75rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3); /* Gold border */
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: #d4af37; /* Gold */
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1.05rem;
+    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+}
+
+nav a:hover {
+    color: #f0e6d2; /* Cream */
+    background: rgba(212, 175, 55, 0.15); /* Light gold overlay */
+    transform: translateY(-2px);
+}
+
+/* Active link style */
+nav a.active {
+    background: rgba(212, 175, 55, 0.25);
+    color: #f0e6d2;
+}
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+@media (max-width: 992px) {
+    nav ul {
+        gap: 1rem;
+    }
+    nav a {
+        padding: 0.5rem 1rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 0.75rem 1.5rem;
+    }
+    nav ul {
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    nav a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0.6rem 1rem;
+    }
+    nav ul {
+        gap: 0.5rem;
+    }
+    nav a {
+        padding: 0.35rem 0.6rem;
+        font-size: 0.85rem;
+    }
+}
+/* naav */
+
+.report-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.6s ease-in-out;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    backdrop-filter: blur(8px);
+}
+
+.report-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #d4af37; /* Gold */
+    font-size: 1.8rem;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    position: absolute;
+    top: -10px;
+    left: 12px;
+    color: #d4af37;
+    background: #0a1a3a;
+    padding: 0 8px;
+    font-size: 0.85rem;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 16px;
+    font-size: 1rem;
+    border: 2px solid rgba(212, 175, 55, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #f0e6d2;
+    transition: all 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #d4af37;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
+.form-group select option {
+    background: #0a1a3a;
+}
+
+.submit-btn {
+    background: linear-gradient(to right, #d4af37, #c9a227);
+    border: none;
+    color: #0a1a3a;
+    padding: 16px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .report-form {
+        padding: 30px;
+    }
+    
+    body {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .report-form {
+        padding: 25px 20px;
+    }
+    
+    .report-form h2 {
+        font-size: 1.5rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 14px;
+    }
+}
+</style>
+
+    </head>
 <body>
+  <nav>
+    <ul>
+        <li><a href="index.html">Cover</a></li>
+        <li><a href="home.html" class="">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="contact us.html">Contact</a></li>
+        <li><a href="report.html" class="active">Report</a></li>
+    </ul>
+</nav>
   <form action="thanks.html" method="get" class="report-form">
     <h2>📝 Report a Professional</h2>
 
