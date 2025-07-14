@@ -1,0 +1,159 @@
+* {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      position: relative;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e8f5f5, #f5f5f5);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .report-form {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    .report-form h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #007b72;
+    }
+
+    .form-group {
+      position: relative;
+      margin-bottom: 25px;
+    }
+
+    .form-group label {
+      position: absolute;
+      top: 14px;
+      left: 16px;
+      color: #aaa;
+      background: white;
+      padding: 0 4px;
+      transition: 0.3s;
+      pointer-events: none;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 16px;
+      font-size: 1rem;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      background: transparent;
+      transition: border 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #007b72;
+      outline: none;
+    }
+
+    .form-group input:focus + label,
+    .form-group input:not(:placeholder-shown) + label,
+    .form-group textarea:focus + label,
+    .form-group textarea:not(:placeholder-shown) + label,
+    .form-group select:focus + label {
+      top: -10px;
+      left: 12px;
+      color: #007b72;
+      font-size: 0.85rem;
+      background: white;
+    }
+
+    .submit-btn {
+      background: linear-gradient(to right, #00c4a7, #007b72);
+      border: none;
+      color: white;
+      padding: 15px;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+/*  yee */
+button {
+ display: inline-block;
+ width: 150px;
+ height: 50px;
+ border-radius: 10px;
+ border: 1px solid #03045e;
+ position: relative;
+ overflow: hidden;
+ transition: all 0.5s ease-in;
+ z-index: 1;
+}
+
+button::before,
+button::after {
+ content: '';
+ position: absolute;
+ top: 0;
+ width: 0;
+ height: 100%;
+ transform: skew(15deg);
+ transition: all 0.5s;
+ overflow: hidden;
+ z-index: -1;
+}
+
+button::before {
+ left: -10px;
+ background: #240046;
+}
+
+button::after {
+ right: -10px;
+ background: #5a189a;
+}
+
+button:hover::before,
+button:hover::after {
+ width: 58%;
+}
+
+button:hover span {
+ color: #e0aaff;
+ transition: 0.3s;
+}
+
+button span {
+ color: #03045e;
+ font-size: 18px;
+ transition: all 0.3s ease-in;
+}
+/*  yebdi */
+    .submit-btn:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
