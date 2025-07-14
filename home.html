@@ -8,24 +8,25 @@
         margin: 0;
         padding-top: 70px;
         font-family: 'Segoe UI', sans-serif;
-        background: #0a1a3a; /* Dark blue */
-        color: #f0e6d2; /* Cream text */
+        background: #0a1a3a; 
+        color: #f0e6d2; 
     }
-/* ===== UNIVERSAL NAVIGATION BAR ===== */
+    
+
 nav {
-    background: rgba(10, 26, 58, 0.98); /* Semi-transparent dark blue */
+    background: rgba(10, 26, 58, 0.98); 
     padding: 0.75rem 2rem;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.3); /* Gold border */
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3); 
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     display: flex;
     justify-content: center;
-    backdrop-filter: blur(10px); /* Frosted glass effect */
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    backdrop-filter: blur(10px); 
+
 }
 
 nav ul {
@@ -41,7 +42,7 @@ nav ul {
 }
 
 nav a {
-    color: #d4af37; /* Gold */
+    color: #d4af37; 
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -52,18 +53,18 @@ nav a {
 }
 
 nav a:hover {
-    color: #f0e6d2; /* Cream */
-    background: rgba(212, 175, 55, 0.15); /* Light gold overlay */
+    color: #f0e6d2; 
+    background: rgba(212, 175, 55, 0.15);
     transform: translateY(-2px);
 }
 
-/* Active link style */
+
 nav a.active {
     background: rgba(212, 175, 55, 0.25);
     color: #f0e6d2;
 }
 
-/* ===== MOBILE RESPONSIVENESS ===== */
+
 @media (max-width: 992px) {
     nav ul {
         gap: 1rem;
@@ -113,7 +114,7 @@ nav a.active {
     header h1 {
         font-size: 2.8rem;
         margin-bottom: 15px;
-        color: #d4af37; /* Gold */
+        color: #d4af37; 
     }
 
     header h3 {
@@ -130,7 +131,7 @@ nav a.active {
         opacity: 0.9;
     }
 
-    /* Navigation */
+    /* N */
     nav {
         background: rgba(10, 26, 58, 0.9);
         padding: 1rem;
@@ -153,7 +154,7 @@ nav a.active {
         color: #f0e6d2;
     }
 
-    /* Stats Section */
+  
     .stats-section {
         display: flex;
         flex-wrap: wrap;
@@ -190,7 +191,7 @@ nav a.active {
         color: #555;
     }
 
-    /* Contact Section */
+  
     .contact-section {
         background: #0a1a3a;
         padding: 60px 20px;
@@ -212,7 +213,7 @@ nav a.active {
         color: #f0e6d2;
     }
 
-    /* Responsive Design */
+    
     @media (max-width: 768px) {
         header {
             padding: 80px 20px 40px;

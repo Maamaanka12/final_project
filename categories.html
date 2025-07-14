@@ -13,26 +13,25 @@
 }
 
 body {
-    background: #0a1a3a; /* Dark blue */
+    background: #0a1a3a; 
     padding: 20px;
-    color: #f0e6d2; /* Cream */
+    color: #f0e6d2; 
     padding-top: 70px;
 }
-/* ===== UNIVERSAL NAVIGATION BAR ===== */
+
 nav {
-    background: rgba(10, 26, 58, 0.98); /* Semi-transparent dark blue */
+    background: rgba(10, 26, 58, 0.98); 
     padding: 0.75rem 2rem;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.3); /* Gold border */
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3); 
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     display: flex;
     justify-content: center;
-    backdrop-filter: blur(10px); /* Frosted glass effect */
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    backdrop-filter: blur(10px); 
 }
 
 nav ul {
@@ -48,7 +47,7 @@ nav ul {
 }
 
 nav a {
-    color: #d4af37; /* Gold */
+    color: #d4af37; 
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -59,18 +58,18 @@ nav a {
 }
 
 nav a:hover {
-    color: #f0e6d2; /* Cream */
-    background: rgba(212, 175, 55, 0.15); /* Light gold overlay */
+    color: #f0e6d2; 
+    background: rgba(212, 175, 55, 0.15); 
     transform: translateY(-2px);
 }
 
-/* Active link style */
+
 nav a.active {
     background: rgba(212, 175, 55, 0.25);
     color: #f0e6d2;
 }
 
-/* ===== MOBILE RESPONSIVENESS ===== */
+
 @media (max-width: 992px) {
     nav ul {
         gap: 1rem;
@@ -113,7 +112,7 @@ h1 {
     text-align: center;
     margin: 30px 0;
     font-size: 2.5rem;
-    color: #d4af37; /* Gold */
+    color: #d4af37; 
 }
 
 .section-header {
@@ -155,13 +154,13 @@ h1 {
 .profile:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-    background: rgba(255, 255, 255, 0.15);
+
 }
 
 .profile img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 150px;
+    height: 170px;
+    border-radius: 20%;
     object-fit: cover;
     margin-bottom: 15px;
     border: 3px solid #d4af37;
